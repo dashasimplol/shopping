@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css" />
+  <title>Список покупок</title>
+  <script type="module" src="./dist/main.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Список покупок</h1>
+    <section class="card">
+      <h2>Добавить товар</h2>
+      <form id="add-form">
+        <input id="product-name" type="text" placeholder="Название товара" required />
+        <input id="product-price" type="number" min="1" step="0.01" placeholder="Цена (руб.)" required />
+        <input id="product-quantity" type="number" min="1" value="1" placeholder="Количество" required />
+        <button type="submit">Добавить в список</button>
+      </form>
+      <p id="message" class="message"></p>
+    </section>
+    <section class="card">
+      <h2>Товары</h2>
+      <ul id="shopping-list" class="list"></ul>
+    </section>
+  </main>
+</body>
+</html>
